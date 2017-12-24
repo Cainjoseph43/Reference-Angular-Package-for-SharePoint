@@ -1,0 +1,1 @@
+var DELETE_MESSAGE = "<b>Do you want to delete this item ?</b>";

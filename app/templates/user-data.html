@@ -1,0 +1,24 @@
+<div class="btn-container">
+    <button type="button" class="btn btn-default" data-ng-click="addItem()">Add Item</button>
+</div>
+<div class="clearfix"></div>
+<table class="user-data table table-striped table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Cateogry</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <tr ng-repeat="result in userData">
+        <td data-ng-bind="result.ID"></td>
+        <td data-ng-bind="result.Name"></td>
+        <td data-ng-bind="result.Category"></td>
+        <td>
+            <span class="glyphicon glyphicon-edit user-action" aria-hidden="true" data-ng-click="editItem()"></span>
+        </td>
+        <td>
+            <span class="glyphicon glyphicon-remove user-action" aria-hidden="true" data-ng-click="deleteItem()"></span>
+        </td>
+    </tr>
+</table>

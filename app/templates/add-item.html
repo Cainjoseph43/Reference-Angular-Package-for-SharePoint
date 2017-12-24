@@ -1,0 +1,14 @@
+<div class="dialog-popup">
+    <div class="popup-title"><i ng-if="popup.icon" class="{{popup.icon}}"></i> {{popup.title}}</div>
+    <div class="popup-body" ng-bind-html="popup.message"></div>
+
+    <div class="popup-donotshow" ng-if="popup.donotshow">
+        <input type="checkbox" id="donot_show_chk" name="donot_show_chk" value="{{popup.key}}" ng-model="donotshow" ng-change="popupDonotShow(donotshow, popup.key)">
+        <label for="donot_show_chk">Do not show this message again</label>
+    </div>
+    <div class="popup-action-buttons">
+        <input id="button_2" class="btn cancel-buttons" type="button" value="Cancel" ng-if="popup.button_2" ng-click="popup.button_2_click()">
+        <input id="button_1" class="btn confirm-buttons" type="button" value="OK" ng-if="popup.button_1" ng-click="popup.button_1_click();">
+        <div class="clearfix"></div>
+    </div>
+</div>

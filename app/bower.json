@@ -1,0 +1,30 @@
+{
+  "name": "Bower",
+  "description": "Bower component package for Reference Angular Package for SharePoint",
+  "main": "",
+  "keywords": [
+    "bower",
+    "AngularJS",
+    "SharePoint"
+  ],
+  "authors": [
+    "vishnups"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "bootstrap.css#^2.3.2",
+    "ng-dialog": "ngDialog#^1.4.0",
+    "jquery": "^3.2.1",
+    "angular": "angularjs#^1.6.8",
+    "angular-route": "^1.6.8",
+    "angular-sanitize": "^1.6.8"
+  }
+}

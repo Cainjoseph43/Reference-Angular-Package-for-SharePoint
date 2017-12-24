@@ -1,0 +1,42 @@
+<div class="first-table">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>{{firstCategory}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="userInfo in overallInformation | filter:'Learning'">
+                <td>{{userInfo.Title}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="second-table">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>{{secondCategory}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="userInfo in overallInformation | filter:secondCategory">
+                <td>{{userInfo.Title}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="third-table">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>{{thirdCategory}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="userInfo in overallInformation | filter:thirdCategory">
+                <td>{{userInfo.Title}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

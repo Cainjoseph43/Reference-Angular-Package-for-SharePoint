@@ -1,0 +1,164 @@
+/* app css stylesheet */
+
+body {
+  padding: 10px;
+}
+
+div.navbar-collapse.collapse {
+  display: block;
+  overflow: hidden;
+  max-height: 0px;
+  -webkit-transition: max-height 0.3s ease;
+  -moz-transition: max-height 0.3s ease;
+  -o-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+}
+
+div.navbar-collapse.collapse.in {
+  max-height: 2000px;
+}
+
+.grid {
+  width: 500px;
+  height: 250px;
+}
+
+.loadershow {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #555;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dlg-header {
+  background-color: #444;
+  color: #fff;
+  padding: 1.5%;
+}
+
+.ngdialog-content {
+  padding: 0 !important;
+}
+
+.dialog-popup .popup-title .fa {
+  margin-right: 7px;
+}
+
+.dialog-popup .popup-title {
+  background-color: #444;
+  padding: 1%;
+  color: #fff;
+}
+
+.dialog-popup .popup-body {
+  font-family: "Arial Regular", Arial;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.dialog-popup .popup-donotshow {
+  font-size: 12px;
+  padding: 5px 0 0 10px;
+}
+
+.dialog-popup .popup-donotshow input {
+  width: 15px;
+  height: 15px;
+  outline: none;
+}
+
+.dialog-popup .popup-donotshow label {
+  position: relative;
+  top: -2px;
+  padding-left: 5px;
+}
+
+.dialog-popup .popup-action-buttons {
+  padding: 0 10px 10px 0;
+}
+
+.dialog-popup .popup-action-buttons .btn {
+  min-width: 6em;
+  padding: 5px 10px;
+  border: 1px solid #ababab;
+  background-color: #fdfdfd;
+  margin-left: 10px;
+  font-size: 11px;
+  color: #444;
+  float: right;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.glyphicon {
+  cursor: pointer;
+}
+
+.btn-container {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+  padding: 0.5%;
+}
+
+.first-table,
+.second-table,
+.third-table {
+  width: 30% !important;
+  display: inline-flex;
+}
+.sc1 {
+  font-style: italic;
+  color: #208008;
+}
+
+.sc10 {
+  font-size: 16px;
+  color: #b7975d;
+}
+
+.help-text {
+  font: 18px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 20px;
+  color: #333;
+}
+.help-wrapper {
+  float: left;
+  white-space: pre;
+  line-height: 1;
+  background: #f8f8f8;
+  border-radius: 5px;
+  width: 96%;
+  margin-left: 2%;
+}
